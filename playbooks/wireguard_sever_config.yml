@@ -39,12 +39,6 @@
       groups: docker
       append: yes
 
-  - name: Restart docker daemon
-    systemd:
-      state: restarted
-      daemon_reload: yes
-      name: docker
-
   - name: Create the wireguard directory
     ansible.builtin.file:
       path: /opt/wireguard
