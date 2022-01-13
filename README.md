@@ -11,7 +11,7 @@
 
 ## Prerequisites. 
 
-Install [sshpass](https://linux.die.net/man/1/sshpass) and [Ansible](https://www.ansible.com/).
+#### Install [sshpass](https://linux.die.net/man/1/sshpass) and [Ansible](https://www.ansible.com/).
 
 Ubuntu:
 ```bash
@@ -26,7 +26,7 @@ CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install --user ansible
 # sshpass
 brew install hudochenkov/sshpass/sshpass
 ```
-Install ansible-galaxy collection community general
+#### Install ansible-galaxy collection community general
 
 ```bash
 ansible-galaxy collection install community.general
