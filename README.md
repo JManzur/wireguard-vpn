@@ -26,7 +26,7 @@ CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install --user ansible
 # sshpass
 brew install hudochenkov/sshpass/sshpass
 ```
-#### Install ansible-galaxy collection community general
+#### Install Ansible Galaxy collection [Community General](https://galaxy.ansible.com/community/general)
 
 ```bash
 ansible-galaxy collection install community.general
