@@ -1,2 +1,3 @@
 ---
-user_name: jmanzur
+server_ip: 192.168.120.111
+ssh_user: jmanzur

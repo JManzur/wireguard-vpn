@@ -63,3 +63,9 @@
     docker_compose:
       project_src: /opt/wireguard
       recreate: always
+
+- name: Allow port range 51820
+  community.general.ufw:
+    rule: allow
+    port: 51820
+    proto: udp
