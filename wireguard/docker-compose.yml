@@ -13,7 +13,7 @@ services:
       - TZ=America/Argentina/Buenos_Aires
       - SERVERURL=auto
       - SERVERPORT=51820
-      - PEERS=jmanzur
+      - PEERS=2
       - PEERDNS=8.8.8.8
       - INTERNAL_SUBNET=10.48.15.0/24
       - ALLOWEDIPS=0.0.0.0/0

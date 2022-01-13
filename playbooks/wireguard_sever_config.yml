@@ -1,3 +1,14 @@
+---
+- hosts: "localhost"
+  gather_facts: no
+  tasks:
+  - include_vars: "{{ playbook_dir }}/../vars.yml"
+  - name: Add host from variable file
+    add_host:
+      groups: linux
+      hostname: "{{ server_ip }}"
+      ansible_user: "{{ ssh_user }}"
+
 - hosts: linux
   become: true
   pre_tasks:
@@ -7,6 +18,7 @@
       upgrade: 'yes'
 
   tasks:
+  - include_vars: "{{ playbook_dir }}/../vars.yml"
   - name: Install packages
     package:
       name:
@@ -22,7 +34,7 @@
 
   - name: Add user to the Docker group.
     user:
-      name: ec2-user
+      name: "{{ ssh_user }}"
       groups: docker
       append: yes
 
