@@ -41,7 +41,7 @@ brew install hudochenkov/sshpass/sshpass
     | TZ=America/Argentina/Buenos_Aires | Specify a timezone to use | [List of Linux TZ time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) |
     | PEERS=2 | Number of VPN users | Can also be a list of names: john,paul,ringo,george |
     | PEERDNS=8.8.8.8 | DNS Server | It can be a public or private DNS |
-    | INTERNAL_SUBNET=10.48.15.0/24 | VPN users IP range | Choose one that is not in use on your network |
+    | INTERNAL_SUBNET=10.48.15.0/24 | VPN users IP range | Choose one that is not in use on your local network |
     | ALLOWEDIPS=0.0.0.0/0 | The IPs/Ranges that the VPN users will be able to reach using the VPN connection | Use "0.0.0.0/0" to allow access to all subnets. | 
 
 5. Make install.sh executable. 
@@ -56,6 +56,8 @@ brew install hudochenkov/sshpass/sshpass
 8. Download the configuration file to connect to your VPN: On your server go to "/opt/wireguard/config" and there you will find a folder for each "PEER", in that folder you will find a QR to add phones and a .conf file to add computers.
 9. On the user's device (phone, tablet, computer), download the WireGuard client.
     - [Download page](https://www.wireguard.com/install/)
+10. Import the .conf file (or scan the QR code).
+11. Connect!
 
 ## Debugging / Troubleshooting:
 
