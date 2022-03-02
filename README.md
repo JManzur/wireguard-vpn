@@ -84,7 +84,7 @@ docker exec -it wireguard wg
 
 ## Author:
 
-- [@JManzur](https://jmanzur.com.ar)
+- [@JManzur](https://jmanzur.com)
 
 ## Documentation:
 
